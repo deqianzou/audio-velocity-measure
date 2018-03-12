@@ -12,6 +12,11 @@
 		EC42C4561EF788D8003999E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC42C4541EF788D8003999E4 /* Main.storyboard */; };
 		EC42C4581EF788D8003999E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC42C4571EF788D8003999E4 /* Assets.xcassets */; };
 		EC42C45B1EF788D8003999E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC42C4591EF788D8003999E4 /* LaunchScreen.storyboard */; };
+		EC42C4631EF78A5C003999E4 /* FFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C4621EF78A5C003999E4 /* FFT.swift */; };
+		EC42C4651EF78B22003999E4 /* PlaySineWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C4641EF78B22003999E4 /* PlaySineWave.swift */; };
+		EC42C4671EF78C84003999E4 /* RecordAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C4661EF78C84003999E4 /* RecordAudio.swift */; };
+		EC42C4691EF78E2E003999E4 /* SpectralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C4681EF78E2E003999E4 /* SpectralView.swift */; };
+		EC42C46B1EF78E8B003999E4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42C46A1EF78E8B003999E4 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		EC42C4571EF788D8003999E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC42C45A1EF788D8003999E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC42C45C1EF788D8003999E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC42C4621EF78A5C003999E4 /* FFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFT.swift; sourceTree = "<group>"; };
+		EC42C4641EF78B22003999E4 /* PlaySineWave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySineWave.swift; sourceTree = "<group>"; };
+		EC42C4661EF78C84003999E4 /* RecordAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordAudio.swift; sourceTree = "<group>"; };
+		EC42C4681EF78E2E003999E4 /* SpectralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectralView.swift; sourceTree = "<group>"; };
+		EC42C46A1EF78E8B003999E4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				EC42C4571EF788D8003999E4 /* Assets.xcassets */,
 				EC42C4591EF788D8003999E4 /* LaunchScreen.storyboard */,
 				EC42C45C1EF788D8003999E4 /* Info.plist */,
+				EC42C4621EF78A5C003999E4 /* FFT.swift */,
+				EC42C4641EF78B22003999E4 /* PlaySineWave.swift */,
+				EC42C4661EF78C84003999E4 /* RecordAudio.swift */,
+				EC42C4681EF78E2E003999E4 /* SpectralView.swift */,
+				EC42C46A1EF78E8B003999E4 /* Utilities.swift */,
 			);
 			path = project;
 			sourceTree = "<group>";
@@ -137,7 +152,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC42C4531EF788D8003999E4 /* ViewController.swift in Sources */,
+				EC42C4671EF78C84003999E4 /* RecordAudio.swift in Sources */,
+				EC42C46B1EF78E8B003999E4 /* Utilities.swift in Sources */,
+				EC42C4651EF78B22003999E4 /* PlaySineWave.swift in Sources */,
 				EC42C4511EF788D8003999E4 /* AppDelegate.swift in Sources */,
+				EC42C4691EF78E2E003999E4 /* SpectralView.swift in Sources */,
+				EC42C4631EF78A5C003999E4 /* FFT.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.sjtu.texot.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.edu.sjtu.texot.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +321,7 @@
 				EC42C4611EF788D8003999E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
